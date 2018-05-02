@@ -188,14 +188,19 @@ let pondScope = ["duck", "realDuck"];
 //function which returns your name.
 
 //Code Here
-
+function outerFn(){
+  return function(){
+    return 'Jin Park';
+  };
+};
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
 //Code Here
-//var innerFn = outerFn();
+// var innerFn = outerFn();
+var innerFn = outerFn();
 
 //Now invoke innerFn and save the result to a variable called finalResult.
 
 //Code Here
-//var finalResult = innerFn;
+var finalResult = innerFn();
